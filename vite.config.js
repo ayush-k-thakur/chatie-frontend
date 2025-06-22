@@ -8,7 +8,7 @@ export default defineConfig({
 		port: 3000,
 		proxy: {
 			"/api": {
-				target: "https://chatie-backend-production.up.railway.app/",
+				target: "https://chatie-backend-production.up.railway.app",
 			},
 		},
 	},
