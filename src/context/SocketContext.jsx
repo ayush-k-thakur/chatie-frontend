@@ -56,7 +56,7 @@ export const SocketContextProvider = ({ children }) => {
 	useEffect(() => {
 		if (authUser) {
 			// Connect to the backend Socket.IO server (default port 5000)
-			socketRef.current = io("https://chatie-backend-production.up.railway.app", {
+			socketRef.current = io("https://chatie-backend.onrender.com", {
 				query: { userId: authUser._id },
 			});
 
