@@ -57,9 +57,7 @@ export const SocketContextProvider = ({ children }) => {
 		if (authUser) {
 			// Connect to the backend Socket.IO server (default port 5000)
 			socketRef.current = io("https://chatie-backend-production.up.railway.app", {
-				query: {
-					userId: authUser._id,
-				},
+				query: { userId: authUser._id },
 			});
 
 			// Listen for the online users list
