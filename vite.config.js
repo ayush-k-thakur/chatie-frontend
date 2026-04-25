@@ -7,8 +7,9 @@ export default defineConfig({
 	server: {
 		proxy: {
 			"/api": {
-				target: "https://chatie-backend.onrender.com",
+				target: "https://chatie-chat.onrender.com"
 			},
 		},
 	},
 });
+
